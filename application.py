@@ -1,0 +1,1 @@
+from application import swagger_server.__main__

@@ -5,12 +5,19 @@ import connexion
 from swagger_server import encoder
 
 
-def main():
+
+def main(env=None):
     app = connexion.App(__name__, specification_dir='./swagger/')
     app.app.json_encoder = encoder.JSONEncoder
-    app.add_api('swagger.yaml', arguments={'title': 'Swagger Petstore'})
-    app.run(port=8080)
+    yaml_file_name = ''
+    if env is None:
+        yaml_file_name = 'swagger_prod.yaml'
+    else:
+        yaml_file_name = 'swagger_dev.yaml'
+    app.add_api(yaml_file_name, arguments={'title': 'Swagger Petstore'})
+    return app
 
+application = main()
 
 if __name__ == '__main__':
-    main()
+    main('DEV').run(port=8080)
