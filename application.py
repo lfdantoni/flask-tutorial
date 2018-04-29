@@ -1,1 +1,1 @@
-from application import swagger_server.__main__
+from swagger_server.__main__ import application
