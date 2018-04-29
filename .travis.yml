@@ -15,3 +15,5 @@ deploy:
   app: "flask-tutorial"
   env: "flaskTutorial-dev"
   bucket_name: "flaskTutorial-dev-deploy"
+  on:
+    all_branches: true
