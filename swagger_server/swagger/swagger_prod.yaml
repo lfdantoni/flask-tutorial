@@ -15,7 +15,7 @@ host: "flasktutorial-dev.us-west-2.elasticbeanstalk.com"
 basePath: "/lfdantoni7/test-python/1.0.0"
 tags:
 - name: "pet"
-  description: "Everything about your Pets"
+  description: "Everything about your Pets" 
   externalDocs:
     description: "Find out more"
     url: "http://swagger.io"
