@@ -14,6 +14,6 @@ deploy:
   region: "us-west-2"  
   app: "flask-tutorial"
   env: "flaskTutorial-dev"
-  bucket_name: "flaskTutorial-dev-deploy"
+  bucket_name: "flask-tutorial-dev-deploy"
   on:
     all_branches: true
