@@ -18,4 +18,4 @@ deploy:
   on:
     branch:
       - dev
-    condition: false
+    condition: '$TRAVIS_PULL_REQUEST' = 'false'
