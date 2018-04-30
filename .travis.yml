@@ -16,5 +16,6 @@ deploy:
   env: "flaskTutorial-dev"
   bucket_name: "flask-tutorial-dev-deploy"
   on:
-    branch: dev
-    condition: $TRAVIS_PULL_REQUEST == false
+    branch:
+      - dev
+    condition: false
