@@ -11,7 +11,7 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "flasktutorial-dev.us-west-2.elasticbeanstalk.com"
+host: "flasktutorial-test.us-west-2.elasticbeanstalk.com"
 basePath: "/lfdantoni7/test-python/1.0.0"
 tags:
 - name: "pet"
