@@ -8,13 +8,23 @@ install: "pip install -r requirements.txt"
 script: nosetests
 
 deploy:
-  provider: elasticbeanstalk
-  access_key_id: $AWS_ACCESS_ID
-  secret_access_key: $AWS_ACCESS_SECRET
-  region: "us-west-2"  
-  app: "flask-tutorial"
-  env: "flaskTutorial-dev"
-  bucket_name: "flask-tutorial-dev-deploy"
-  on:
-    branch:
-      - dev
+  - provider: elasticbeanstalk
+    access_key_id: $AWS_ACCESS_ID
+    secret_access_key: $AWS_ACCESS_SECRET
+    region: "us-west-2"  
+    app: "flask-tutorial"
+    env: "flaskTutorial-dev"
+    bucket_name: "flask-tutorial-dev-deploy"
+    on:
+      branch:
+        - dev
+  - provider: elasticbeanstalk
+    access_key_id: $AWS_ACCESS_ID
+    secret_access_key: $AWS_ACCESS_SECRET
+    region: "us-west-2"  
+    app: "flask-tutorial"
+    env: "flaskTutorial-prod"
+    bucket_name: "flask-tutorial-dev-deploy"
+    on:
+      branch:
+        - master
