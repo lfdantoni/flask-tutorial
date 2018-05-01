@@ -72,7 +72,7 @@ def get_pet_by_id(petId):  # noqa: E501
 
     :rtype: Pet
     """
-    return 'do some magic! test13'
+    return 'do some magic! test14'
 
 
 def update_pet(body):  # noqa: E501
