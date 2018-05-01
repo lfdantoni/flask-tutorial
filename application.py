@@ -1,1 +1,4 @@
-from swagger_server.__main__ import application
+from swagger_server.__main__ import main
+import os
+
+application = main(os)
