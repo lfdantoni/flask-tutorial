@@ -23,7 +23,7 @@ deploy:
     secret_access_key: $AWS_ACCESS_SECRET
     region: "us-west-2"  
     app: "flask-tutorial"
-    env: "flaskTutorial-prod"
+    env: "flaskTutorial-prod2"
     bucket_name: "flask-tutorial-dev-deploy"
     on:
       branch:
